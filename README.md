@@ -4,7 +4,6 @@
 
 First, you'll need to have git and node installed, and since I did this all on Ubuntu, I recommend you do the same if you can, although you should be fine with a Mac, or by using WSL if you are a Windows person.
 
-
 ## Installing node using nvm
 
 Check the nvm repo for the latest version and instructions.
@@ -18,7 +17,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 then logout and log back in, or run the following to get the environment set up correctly
 
 ```sh
-k
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
 
 Now install the latest long term support (LTS) version of node
@@ -38,4 +39,3 @@ Now check the version looks right
 ```sh
 node -v
 ```
-
