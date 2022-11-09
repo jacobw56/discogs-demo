@@ -33,7 +33,7 @@ npm start
 
 ## Installing git
 
-These instrustions are for ubuntu or debian, consult the instructions for you operating system accordingly.
+These instructions are for ubuntu or debian, consult the instructions for you operating system accordingly.
 
 First, always update `apt`
 
